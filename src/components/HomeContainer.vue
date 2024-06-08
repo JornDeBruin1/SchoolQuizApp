@@ -42,6 +42,8 @@
 	} from '@ionic/vue';
 	import { useStore } from 'vuex';
 	import { useRouter } from 'vue-router';
+	//initialiseer de Vuex Store
+	const store = useStore();
 	const props = defineProps({
 		quiz: Object,
 		favoriteQuizzes: Array,
@@ -67,9 +69,6 @@
 	const navigateToQuiz = () => {
 		router.push(`/tabs/quiz/${props.quiz.id}`);
 	};
-
-	//initialiseer de Vuex Store
-	const store = useStore();
 
 	//knop van heart icon voor hem op te slaan in de local storage
 	const toggleFavorite = () => {
