@@ -1,10 +1,17 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import TabsPage from '../views/TabsPage.vue';
+import HomePage from '../views/HomePage.vue';
+import QuizPage from '../views/QuizPage.vue';
 
 const routes = [
 	{
 		path: '/',
-		redirect: '/tabs/tab1',
+		redirect: '/tabs/home',
+	},
+	{
+		name: 'QuizView',
+		path: '/tabs/quiz/:id',
+		component: QuizPage,
 	},
 	{
 		path: '/tabs/',
@@ -12,19 +19,19 @@ const routes = [
 		children: [
 			{
 				path: '',
-				redirect: '/tabs/tab1',
+				redirect: '/tabs/home',
 			},
 			{
-				path: 'tab1',
-				component: () => import('@/views/Tab1Page.vue'),
+				path: 'home',
+				component: () => import('@/views/HomePage.vue'),
 			},
 			{
-				path: 'tab2',
-				component: () => import('@/views/Tab2Page.vue'),
+				path: 'favorite',
+				component: () => import('@/views/FavoritePage.vue'),
 			},
 			{
-				path: 'tab3',
-				component: () => import('@/views/Tab3Page.vue'),
+				path: 'setting',
+				component: () => import('@/views/SettingPage.vue'),
 			},
 		],
 	},

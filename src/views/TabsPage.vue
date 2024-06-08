@@ -2,20 +2,20 @@
 	<ion-page>
 		<ion-tabs>
 			<ion-router-outlet></ion-router-outlet>
-			<ion-tab-bar>
-				<ion-tab-button tab="tab1" href="/tabs/tab1">
-					<ion-icon aria-hidden="true" :icon="triangle" />
-					<ion-label>Tab 1</ion-label>
+			<ion-tab-bar :class="{ 'dark-mode': isDarkModeEnabled }">
+				<ion-tab-button tab="Home" href="/tabs/home">
+					<ion-icon class="text-[31px]" aria-hidden="true" :icon="home" />
+					<ion-label class="pb-[9px] text-[19px]">Home</ion-label>
 				</ion-tab-button>
 
-				<ion-tab-button tab="tab2" href="/tabs/tab2">
-					<ion-icon aria-hidden="true" :icon="ellipse" />
-					<ion-label>Tab 2</ion-label>
+				<ion-tab-button tab="favorite" href="/tabs/favorite">
+					<ion-icon class="text-[31px]" aria-hidden="true" :icon="heart"></ion-icon>
+					<ion-label class="pb-[9px] text-[19px]">Favorite</ion-label>
 				</ion-tab-button>
 
-				<ion-tab-button tab="tab3" href="/tabs/tab3">
-					<ion-icon aria-hidden="true" :icon="square" />
-					<ion-label>Tab 3</ion-label>
+				<ion-tab-button tab="setting" href="/tabs/setting">
+					<ion-icon class="text-[31px]" aria-hidden="true" :icon="cog"></ion-icon>
+					<ion-label class="pb-[9px] text-[19px]">Settings</ion-label>
 				</ion-tab-button>
 			</ion-tab-bar>
 		</ion-tabs>
@@ -32,5 +32,22 @@
 		IonPage,
 		IonRouterOutlet,
 	} from '@ionic/vue';
-	import { ellipse, square, triangle } from 'ionicons/icons';
+	import { home, heart, cog } from 'ionicons/icons';
+	import { onBeforeUnmount, onMounted, ref, watch } from 'vue';
+	import { onBeforeRouteLeave, useRoute } from 'vue-router';
+	const isDarkModeEnabled = ref(localStorage.getItem('darkMode') === 'true');
+	const route = useRoute();
+	//hier kijk ik of er naar de favorite page wordt gelinkt zo ja moet er een page refresh komen
+	watch(route, () => {
+		if (route.path === '/tabs/favorite') {
+			location.reload();
+		}
+	});
 </script>
+
+<style scoped>
+	.dark-mode {
+		--background: #1a2029;
+		--color: white;
+	}
+</style>
