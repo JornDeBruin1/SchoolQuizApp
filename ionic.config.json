@@ -1,0 +1,7 @@
+{
+  "name": "schoolQuizApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
