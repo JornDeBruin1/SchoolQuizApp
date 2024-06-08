@@ -5,14 +5,16 @@
 		"frameworksBackend": {
 			"region": "europe-west1"
 		},
-		"headers": {
-			"source": "./public/manifest.json",
-			"headers": [
-				{
-					"key": "Content Type",
-					"value": "application/json"
-				}
-			]
-		}
+		"headers": [
+			{
+				"source": "./public/manifest.json",
+				"headers": [
+					{
+						"key": "Content Type",
+						"value": "application/json"
+					}
+				]
+			}
+		]
 	}
 }
