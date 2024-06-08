@@ -1,13 +1,19 @@
 {
-  "hosting": {
-    "source": ".",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "frameworksBackend": {
-      "region": "europe-west1"
-    }
-  }
+	"hosting": {
+		"public": "public",
+		"source": ".",
+		"ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+		"frameworksBackend": {
+			"region": "europe-west1"
+		},
+		"headers": {
+			"source": "./public/manifest.json",
+			"headers": [
+				{
+					"key": "Content Type",
+					"value": "application/json"
+				}
+			]
+		}
+	}
 }
