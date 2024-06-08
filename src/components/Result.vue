@@ -1,6 +1,6 @@
 <template>
 	<ion-content :class="{ 'dark-page': isDarkModeEnabled }">
-		<div class="w-full pl-5 flex flex-col justify-center dark:bg-gray-900 h-fit">
+		<div class="w-full pl-5 flex flex-col justify-center dark:bg-gray-900 mb-50">
 			<h2 class="dark:text-white">Quiz Completed!</h2>
 			<p class="dark:text-white">
 				You got {{ numberOfCorrectAnswers }} out of {{ quizQuestionlength }} questions
