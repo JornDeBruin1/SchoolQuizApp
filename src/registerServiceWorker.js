@@ -3,7 +3,7 @@
 import { register } from 'register-service-worker';
 
 const NODE_ENV = 'development'; // replace with your own value
-const BASE_URL = 'http://localhost:8100/'; // replace with your own value
+const BASE_URL = 'https://schoolquiz1.web.app/'; // replace with your own value
 
 if (NODE_ENV !== 'production') {
 	register(`${BASE_URL}service-worker.js`, {
