@@ -1,7 +1,7 @@
 <template>
 	<ion-page>
 		<ion-content :fullscreen="true" :class="{ 'dark-content': isDarkModeEnabled }">
-			<ion-list class="dark:bg-gray-800">
+			<ion-list class="dark:bg-gray-800 w-full md:px-[35%] pt-12">
 				<ion-item class="mt-12" :class="{ 'dark-item': isDarkModeEnabled }">
 					<ion-label class="dark:text-white">Enable darkmode</ion-label>
 					<ion-toggle
@@ -23,7 +23,6 @@
 						<ion-select-option class="dark:text-white" value="en"
 							>Engels</ion-select-option
 						>
-						<!-- Add more languages as needed -->
 					</ion-select>
 				</ion-item>
 			</ion-list>

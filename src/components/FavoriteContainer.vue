@@ -1,7 +1,14 @@
 <template>
 	<ion-content :class="{ 'dark-content': isDarkModeEnabled }">
-		<div class="w-full dark:bg-gray-900" v-if="favoriteQuizzes.length > 0">
-			<h2 class="dark:text-white m-0 py-5 flex justify-center">Favorite Quizzes</h2>
+		<div>
+			<h2 class="dark:text-white m-0 py-5 flex justify-center text-2xl">
+				Favorite Quizzes
+			</h2>
+		</div>
+		<div
+			class="w-full md:flex md:justify-center dark:bg-gray-900"
+			v-if="favoriteQuizzes.length > 0"
+		>
 			<ion-card
 				v-for="quiz in favoriteQuizzes"
 				:key="quiz.id"

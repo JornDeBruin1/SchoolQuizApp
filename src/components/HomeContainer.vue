@@ -1,5 +1,5 @@
 <template>
-	<div class="w-full dark:bg-gray-800">
+	<div class="w-full md:flex md:justify-center dark:bg-gray-800">
 		<ion-card class="dark:bg-gray-800 m-0 py-6" @click="navigateToQuiz()">
 			<img class="p-4" :src="quiz.img" alt="" />
 			<ion-card-header class="dark:bg-gray-800">

@@ -5,7 +5,7 @@
 				<ion-buttons class="dark:bg-gray-800">
 					<ion-menu-button></ion-menu-button>
 				</ion-buttons>
-				<ion-title class="dark:text-white">Settings</ion-title>
+				<ion-title class="dark:text-white text-center">Settings</ion-title>
 			</ion-toolbar>
 		</ion-header>
 		<ion-content :fullscreen="true" class="dark:bg-gray-800"
