@@ -9,12 +9,7 @@
 			</ion-toolbar>
 		</ion-header>
 		<ion-content :fullscreen="true" class="dark:bg-gray-800">
-			<FavoriteContainer
-				v-for="quizzes in quiz"
-				:key="quizzes.id"
-				:quizzes="favoriteQuizzes"
-				:quiz="quizzes"
-			/>
+			<FavoriteContainer :quizzes="favoriteQuizzes" :quiz="quizzes" />
 		</ion-content>
 	</ion-page>
 </template>

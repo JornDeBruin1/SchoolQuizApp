@@ -1,19 +1,15 @@
 <template>
 	<ion-content :class="{ 'dark-content': isDarkModeEnabled }">
-		<div>
+		<div></div>
+		<div class="w-full dark:bg-gray-900" v-if="favoriteQuizzes.length > 0">
 			<h2 class="dark:text-white m-0 py-5 flex justify-center text-2xl">
 				Favorite Quizzes
 			</h2>
-		</div>
-		<div
-			class="w-full md:flex md:justify-center dark:bg-gray-900"
-			v-if="favoriteQuizzes.length > 0"
-		>
 			<ion-card
 				v-for="quiz in favoriteQuizzes"
 				:key="quiz.id"
 				@click="navigateToQuiz(quiz.id)"
-				class="dark:bg-gray-800 m-0 py-6"
+				class="dark:bg-gray-800 m-0 py-6 md:flex md:flex-col md:justify-center md:w-1/3 md:mx-[34%]"
 			>
 				<img class="p-4" :src="quiz.img" alt="" />
 				<ion-card-header class="dark:bg-gray-800">
