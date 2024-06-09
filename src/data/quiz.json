@@ -213,6 +213,36 @@
 						"isCorrect": false
 					}
 				]
+			},
+			{
+				"id": 8,
+				"title": "Welke stad organiseerde de Olympische Zomerspelen in 2004?",
+				"options": [
+					{
+						"id": 1,
+						"label": "A",
+						"text": "Atlanta, Verenigde Staten",
+						"isCorrect": false
+					},
+					{
+						"id": 2,
+						"label": "B",
+						"text": "Tokio, Japan",
+						"isCorrect": false
+					},
+					{
+						"id": 3,
+						"label": "C",
+						"text": "Rome, Italië",
+						"isCorrect": false
+					},
+					{
+						"id": 4,
+						"label": "D",
+						"text": "Athene, Griekenland",
+						"isCorrect": true
+					}
+				]
 			}
 		],
 		"isFavorite": false
@@ -429,6 +459,36 @@
 						"label": "D",
 						"text": "Nagasaki",
 						"isCorrect": true
+					}
+				]
+			},
+			{
+				"id": 8,
+				"title": "Wie was de leider van de USSR (Sovjet Unie) tijdens de tweede wereld oorlog ",
+				"options": [
+					{
+						"id": 1,
+						"label": "A",
+						"text": "Vladimir Lenin",
+						"isCorrect": false
+					},
+					{
+						"id": 2,
+						"label": "B",
+						"text": "Jozef Stalin",
+						"isCorrect": true
+					},
+					{
+						"id": 3,
+						"label": "C",
+						"text": "Nikita Chroesjtsjov",
+						"isCorrect": false
+					},
+					{
+						"id": 4,
+						"label": "D",
+						"text": "Michail Gorbatsjov",
+						"isCorrect": false
 					}
 				]
 			}
@@ -649,6 +709,36 @@
 						"isCorrect": false
 					}
 				]
+			},
+			{
+				"id": 8,
+				"title": "Van wie is de evolutietheorie afkomstig?",
+				"options": [
+					{
+						"id": 1,
+						"label": "A",
+						"text": "Niels Bohr",
+						"isCorrect": false
+					},
+					{
+						"id": 2,
+						"label": "B",
+						"text": "Aristoteles",
+						"isCorrect": false
+					},
+					{
+						"id": 3,
+						"label": "C",
+						"text": "Galileo Galilei",
+						"isCorrect": false
+					},
+					{
+						"id": 4,
+						"label": "D",
+						"text": "Charles Darwin",
+						"isCorrect": true
+					}
+				]
 			}
 		],
 		"isFavorite": false
@@ -867,6 +957,36 @@
 						"isCorrect": true
 					}
 				]
+			},
+			{
+				"id": 8,
+				"title": "Welke kleur komt in vlaggen over de hele wereld het meeste voor?",
+				"options": [
+					{
+						"id": 1,
+						"label": "A",
+						"text": "Rood",
+						"isCorrect": true
+					},
+					{
+						"id": 2,
+						"label": "B",
+						"text": "Blauw",
+						"isCorrect": false
+					},
+					{
+						"id": 3,
+						"label": "C",
+						"text": "Geel",
+						"isCorrect": false
+					},
+					{
+						"id": 4,
+						"label": "D",
+						"text": "Groen",
+						"isCorrect": false
+					}
+				]
 			}
 		],
 		"isFavorite": false
@@ -1056,9 +1176,38 @@
 					}
 				]
 			},
-
 			{
 				"id": 7,
+				"title": "Wie heeft Star Wars bedacht",
+				"options": [
+					{
+						"id": 1,
+						"label": "A",
+						"text": "Christopher Nolan",
+						"isCorrect": false
+					},
+					{
+						"id": 2,
+						"label": "B",
+						"text": "George Lucas",
+						"isCorrect": true
+					},
+					{
+						"id": 3,
+						"label": "C",
+						"text": "Quentin Tarantino",
+						"isCorrect": false
+					},
+					{
+						"id": 4,
+						"label": "D",
+						"text": "Steven Spielberg",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"id": 8,
 				"title": "In welk jaar ging de aller eerste Shrek in premiere",
 				"options": [
 					{
