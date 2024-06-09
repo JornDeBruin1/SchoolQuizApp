@@ -47,7 +47,7 @@ app.provide('isDarkModeEnabled', isDarkModeEnabled);
 app.provide('toggleDarkMode', toggleDarkMode);
 
 router.beforeEach((to, from, next) => {
-	// Load favorite quizzes from local storage into Vuex store
+	// laad favorite quizzes van de local storage in de Vuex store
 	const storedFavoriteQuizzes = localStorage.getItem('favoriteQuizzes');
 	if (storedFavoriteQuizzes) {
 		store.dispatch('loadFavorites', JSON.parse(storedFavoriteQuizzes));

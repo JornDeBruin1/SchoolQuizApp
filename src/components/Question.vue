@@ -39,8 +39,8 @@
 	const { question } = defineProps(['question']);
 	const emit = defineEmits(['selectOption']);
 	const selectedOption = ref(null);
+	
 	//kijk voor geselecteerde optie om te kijken of het antwoord goed is
-
 	const emitSelectedOption = (option) => {
 		emit('selectOption', option.isCorrect, option);
 	};

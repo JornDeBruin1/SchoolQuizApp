@@ -37,7 +37,7 @@
 		if (props.showResult === true) {
 			return 1;
 		}
-		// Calculate progress based on the last completed question
+		// bereken de huidige status van de progressie
 		return (props.CurrentQuestion - 1) / props.questionLength;
 	});
 

@@ -24,6 +24,7 @@ export default {
 		},
 	},
 	actions: {
+		// favorite toevoegen aan de local storage
 		addFavorite({ commit, state }, quizId) {
 			const quiz = state.quizzes.find((q) => q.id === quizId);
 			if (quiz) {
@@ -31,6 +32,7 @@ export default {
 				localStorage.setItem('favoriteQuizzes', JSON.stringify(state.favoriteQuizzes));
 			}
 		},
+		// favorite verwijderen uit de local storage
 		removeFavorite({ commit, state }, quizId) {
 			const quiz = state.quizzes.find((q) => q.id === quizId);
 			if (quiz) {
@@ -38,6 +40,7 @@ export default {
 				localStorage.setItem('favoriteQuizzes', JSON.stringify(state.favoriteQuizzes));
 			}
 		},
+		// favorieten inladen vanuit de local storage
 		loadFavorites({ commit }, quizzes) {
 			commit('SET_FAVORITES', quizzes);
 		},

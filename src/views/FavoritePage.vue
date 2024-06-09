@@ -31,6 +31,7 @@
 
 	const store = useStore();
 
+	//de id krijgen van de favoritequzzes uit de store functie
 	const favoriteQuizzes = computed(() => {
 		return store.state.favoriteQuizzes.map((id) => quiz.find((q) => q.id === id));
 	});

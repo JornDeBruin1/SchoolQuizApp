@@ -34,6 +34,7 @@
 	import quizzesData from '@/data/quiz.json';
 	import HomeContainer from '@/components/HomeContainer.vue';
 
+	//de favorite quiz uit de localstorage halen
 	const quizzes = ref(
 		quizzesData.map((quiz) => {
 			const favoriteQuizzes = JSON.parse(localStorage.getItem('favoriteQuizzes')) || [];
@@ -43,9 +44,7 @@
 	);
 	const favoriteQuizzes = ref([]);
 
-	// const favoriteQuizzesData = computed(() => {
-	// 	return quizzes.value.filter((quiz) => favoriteQuizzes.value.has(quiz.id));
-	// });
+	// het updaten van de favorite quiz op de huidige staat
 	const updateFavorite = (quizId) => {
 		const quiz = quizzes.value.find((quiz) => quiz.id === quizId);
 		if (quiz) {

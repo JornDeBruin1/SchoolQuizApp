@@ -47,12 +47,14 @@
 	const toggleDarkMode = () => {
 		isDarkModeEnabled.value = !isDarkModeEnabled.value;
 		localStorage.setItem('darkMode', JSON.stringify(isDarkModeEnabled.value));
+		//reload de pagina om het overal toe te passen waar de dark: class voor staat
 		nextTick(() => {
-			location.reload(); // Reload the page to apply dark mode to all components
+			location.reload();
 		});
 	};
 	const isDarkModeEnabled = ref(false);
 
+	// krijg de status van de darkmode knop
 	onMounted(() => {
 		const savedDarkModeSetting = JSON.parse(localStorage.getItem('darkMode'));
 		if (savedDarkModeSetting !== null) {

@@ -50,7 +50,7 @@
 	});
 	const favoriteQuizzes = computed(() => store.state.favoriteQuizzes);
 
-	// Check if a quiz is favorite
+	// kijken of een quiz favorite is
 	const isQuizFavorite = (quiz) => {
 		return favoriteQuizzes.value.some((favoriteQuiz) => favoriteQuiz.id === quiz.id);
 	};

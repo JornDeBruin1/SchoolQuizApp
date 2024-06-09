@@ -67,6 +67,7 @@
 	};
 	const router = useRouter();
 
+	//click functie voor naar de quiz te gaan
 	const navigateToQuiz = (quizId) => {
 		router.push(`/tabs/quiz/${quizId}`);
 	};
