@@ -6,7 +6,7 @@
 				You got {{ numberOfCorrectAnswers }} out of {{ quizQuestionlength }} questions
 				correct.
 			</p>
-			<ion-list>
+			<ion-list class="p-0">
 				<ion-item
 					v-for="(answer, index) in userAnswers"
 					:key="index"
